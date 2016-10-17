@@ -97,11 +97,11 @@ public class FlingView extends BaseNavigationBar {
     };
 
     private static final class FlingGestureDetectorPriv extends FlingGestureDetector {
-        static final int LP_TIMEOUT = 250;
+        static final int LP_TIMEOUT = 2400;
         // no more than default timeout
         static final int LP_TIMEOUT_MAX = LP_TIMEOUT;
         // no less than 25ms longer than single tap timeout
-        static final int LP_TIMEOUT_MIN = 25;
+        static final int LP_TIMEOUT_MIN = 100;
         private int mLongPressTimeout = LP_TIMEOUT;
 
         public FlingGestureDetectorPriv(Context context, OnGestureListener listener) {
